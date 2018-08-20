@@ -27,6 +27,7 @@ sidebar:
 
 post:
   created: Post created
+  visitors: Viewed
   modified: Post modified
   sticky: Sticky
   posted: Posted on

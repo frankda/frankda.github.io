@@ -18,6 +18,12 @@ url:
 baseurl:
 permalink: pretty
 
+#Viewer qty record
+leancloud_visitors:
+  enable: true
+  app_id: dbsaH0rAR7J3ho93jVICPtQb-gzGzoHsz
+  app_key: xoNWsmOPMnr6RDLKiAtMFe0x
+  
 # Pagination
 paginate: 10
 #paginate_path: "/page:num/"
