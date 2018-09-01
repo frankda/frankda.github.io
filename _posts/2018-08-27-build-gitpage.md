@@ -1,5 +1,6 @@
 ---
 title: Use Jekyll Create GitHub Page (For Windows)
+comments: true
 description:
 categories:
  - A Guide for start coding
@@ -67,13 +68,13 @@ cd username.github.io
 bundle exec jekyll serve
 {% endhighlight %}
 
-After finishing the steps above, open your browser and enter http://127.0.0.1:4000
+After finishing the steps above, open your browser and enter `http://127.0.0.1:4000`
 
 Now you can see your website initial looking. Every time if you want to open your local website, enter `username.github.io` folder in commman promt and run `bundle exec jekyll serve`.
 
 #### Deploy your website on Github Page
 
-Using command promt enter `username.github.io` folder, for example: `cd user\anyfolder\username.github.io`. Then
+In `username.github.io` folder, type like below
 
 {% highlight ruby %}
 git init
@@ -86,6 +87,31 @@ git push -u origin master
 
 ## Test your Github Page
 
-Now you can use your browser and enter `https//username.github.io` to see your onw blog. There may be errors happened during this process because of any unknown bugs. Write down the error information and search to see how others solve these kinds of problems.
+Now you can use your browser and enter `https://username.github.io` to see your onw blog. There may be errors happened during this process because of any unknown bugs. Write down the error information and search to see how others solve these kinds of problems.
 
 For beginner, you can use others' Jekyll theme to decorate your blog, I may also write a short article to illustrate how to change Jekyll theme and problems you may meet in changing theme.
+
+{% if page.comments %}
+
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://frankda.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+{% endif %}
