@@ -2,7 +2,7 @@
 title: Why I write this guide
 description: This is an instruction for this series guide
 categories:
- - A Developer Guide for Newbies
+ - A Guide for start coding
 tags:
 ---
 
